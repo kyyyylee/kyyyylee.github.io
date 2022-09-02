@@ -9,7 +9,7 @@ body{
 
 /*header*/
 header{
-    background-color: #17a8e4;
+    background-color: burlywood;
     padding: 1rem 2%;
 }
 header h1{
@@ -56,10 +56,6 @@ main{
     display: block;
 }
 
-main h1{
-    color: #17a8e4;
-}
-
 main figure{
     margin: 0;
     width: 100%;
@@ -78,6 +74,6 @@ main figcaption{
 footer{
     text-align: center;
     padding: 1rem 2%;
-    background-color: #17a8e4;
+    background-color: burlywood;
 }
 
