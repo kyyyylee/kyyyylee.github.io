@@ -317,6 +317,8 @@ html {
 /*  apply a natural box layout model to all elements  */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 header, nav, #mainWrapper, footer {
@@ -384,8 +386,18 @@ nav a:hover {
   height: auto;
 }
 
-#mainWrapper {
-  padding: 0.8rem 2%;
+div#mainWrapper {
+  padding: 2%;
+}
+
+.pic {
+  margin: 0;
+  width: 100%;
+}
+
+.pic img {
+  width: 100%;
+  height: auto;
 }
 
 div#footerWrapper {
@@ -393,6 +405,7 @@ div#footerWrapper {
 }
 
 footer {
+  margin: 0;
   padding: 1rem;
   text-align: center;
 }
@@ -409,9 +422,21 @@ footer {
   header p {
     display: block;
   }
+  .pic {
+    float: right;
+    width: 48%;
+    margin-left: 2%;
+    padding-bottom: 0.5rem;
+  }
 } /* end of media query */
 @media only screen and (min-width: 1028px) {
   nav ul {
     justify-content: center;
+  }
+  .pic {
+    float: right;
+    width: 31%;
+    margin-left: 2%;
+    padding-bottom: 0.5rem;
   }
 } /* end of media query */

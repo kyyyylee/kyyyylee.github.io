@@ -9,6 +9,8 @@ html {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 //max-width
@@ -77,11 +79,21 @@ nav {
 }
 .hero img{
   width: 100%;
-  height: auto;
+  height:auto;
 }
 
-#mainWrapper{
-  padding: 0.8rem 2%;
+div#mainWrapper{
+  padding: 2%;
+}
+
+//picture
+.pic{
+  margin: 0;
+  width: 100%;
+}
+.pic img{
+  width: 100%;
+  height: auto;
 }
 
 //footer
@@ -89,6 +101,7 @@ div#footerWrapper{
   background-color: #eee;
 }
 footer{
+  margin: 0;
   padding: 1rem;
   text-align: center;
 }
