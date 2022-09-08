@@ -5,9 +5,8 @@ nav ul{
     padding: 0;
 }
 nav ul li{
-    float: left;
     list-style-type: none;
-    background-color: brown;
+    text-decoration: none;
 }
 nav ul li a{
     display: block;
@@ -18,5 +17,6 @@ main h1{
 }
 footer{
     text-align: center;
+    background-color: pink;
     clear: both;
 }
