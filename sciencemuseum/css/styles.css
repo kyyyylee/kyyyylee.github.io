@@ -319,6 +319,11 @@ html {
   box-sizing: border-box;
 }
 
+header, nav, #mainWrapper, footer {
+  max-width: 75rem;
+  margin: auto;
+}
+
 body {
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
@@ -369,6 +374,29 @@ nav a:hover {
   background-color: #444;
 }
 
+.hero {
+  width: 100%;
+  margin: 0;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+#mainWrapper {
+  padding: 0.8rem 2%;
+}
+
+div#footerWrapper {
+  background-color: #eee;
+}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+}
+
 @media only screen and (min-width: 560px) {
   nav ul {
     display: flex;
@@ -383,10 +411,6 @@ nav a:hover {
   }
 } /* end of media query */
 @media only screen and (min-width: 1028px) {
-  header, nav, main, footer {
-    max-width: 64rem;
-    margin: auto;
-  }
   nav ul {
     justify-content: center;
   }

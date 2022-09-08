@@ -11,6 +11,12 @@ html {
   box-sizing: border-box;
 }
 
+//max-width
+header, nav, #mainWrapper, footer{
+  max-width:75rem;
+  margin: auto;
+}
+
 //body
 body {
   font-size: 16px;
@@ -38,7 +44,6 @@ header {
   } // hide when small
 } // end header
 
-
 //nav
 div#navWrapper{
   background-color: #111;  
@@ -64,6 +69,26 @@ nav {
     background-color: #444;
   }
 } //end nav
-//main
+
+//hero image
+.hero {
+  width: 100%;
+  margin: 0;
+}
+.hero img{
+  width: 100%;
+  height: auto;
+}
+
+#mainWrapper{
+  padding: 0.8rem 2%;
+}
 
 //footer
+div#footerWrapper{
+  background-color: #eee;
+}
+footer{
+  padding: 1rem;
+  text-align: center;
+}
