@@ -308,5 +308,110 @@ template {
   display: none;
 }
 
-/* end of media query */
-/* end of media query */
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/*  apply a natural box layout model to all elements  */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header,
+nav,
+main,
+footer {
+  max-width: 71.25rem;
+  margin: auto;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+}
+
+header {
+  padding: 0.8rem 2%;
+  display: grid;
+  grid-template-columns: 110px auto;
+}
+
+#headerText h1 {
+  margin: 0;
+  margin-top: 0.8rem;
+}
+
+nav {
+  background-color: rgb(37, 70, 37);
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  list-style-type: none;
+  text-align: right;
+}
+nav li.active {
+  background-color: #132513;
+}
+nav a {
+  color: white;
+  display: block;
+  padding: 0.8rem 2%; /*44px min*/
+  text-decoration: none;
+}
+nav a:hover {
+  -webkit-text-decoration: underline #488948;
+          text-decoration: underline #488948;
+  text-decoration-thickness: 3px;
+}
+
+main h1 {
+  padding: 0.8rem 2%;
+}
+
+div.galleryWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+div.galleryWrapper figure {
+  flex-basis: 46%;
+  margin: 0;
+  padding: 0.8rem 2%;
+  text-align: center;
+}
+div.galleryWrapper img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: #488948;
+  margin-top: 1rem;
+  padding: 0.8rem 2%;
+  text-align: center;
+}
+
+@media only screen and (min-width: 560px) {
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  nav a {
+    padding: 1rem;
+  }
+  div.galleryWrapper figure {
+    flex-basis: 29%;
+  }
+} /* end of media query */
+@media only screen and (min-width: 1028px) {
+  div.galleryWrapper figure {
+    flex-basis: 21%;
+  }
+} /* end of media query */

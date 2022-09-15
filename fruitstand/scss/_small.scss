@@ -1,0 +1,97 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/*  apply a natural box layout model to all elements  */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+//max-width
+header,
+nav,
+main,
+footer {
+  max-width: 71.25rem;
+  margin: auto;
+}
+
+//body
+body {
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+}
+
+//header
+header {
+  padding: 0.8rem 2%;
+  display: grid;
+  grid-template-columns: 110px auto;
+}
+#headerText {
+  h1 {
+    margin: 0;
+    margin-top: 0.8rem;
+  }
+}
+
+//nav
+nav {
+  background-color: $primaryColor;
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style-type: none;
+    text-align: right;
+  }
+  li.active {
+    background-color: (darken($primaryColor, 10%));
+  }
+  a {
+    color: white;
+    display: block;
+    padding: 0.8rem 2%; /*44px min*/
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline (lighten($primaryColor, 20%));
+    text-decoration-thickness: 3px;
+  }
+} //end nav
+
+//main
+main h1{
+    padding: 0.8rem 2%;
+}
+//gallery
+div.galleryWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  figure {
+    flex-basis: 46%;
+    margin: 0;
+    padding: 0.8rem 2%;
+    text-align: center;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+//footer
+footer{
+    background-color:(lighten($primaryColor, 20%));
+    margin-top: 1rem;
+    padding: 0.8rem 2%;
+    text-align: center;
+}
