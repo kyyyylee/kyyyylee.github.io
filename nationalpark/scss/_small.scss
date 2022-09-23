@@ -1,0 +1,73 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/*  apply a natural box layout model to all elements  */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+//max-width
+header,
+nav,
+main,
+footer {
+  max-width: 60rem;
+  margin: auto;
+}
+
+/*--------------- body ------------------*/
+body{
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+
+}
+
+/*--------------- header ------------------*/
+div#headerWrapper{
+  background-image: url(../images/header-small.jpg);
+  height: 140px;
+}
+header{
+  padding: $padding;
+}
+
+/*--------------- nav ------------------*/
+nav{
+  ul{
+    margin: 0;
+    padding: 0;
+  }
+  li{
+    list-style-type: none;
+  }
+  li.active{
+    background-color: pink;
+  }
+  a{
+    display: block;
+    padding: $padding;
+    color: black;
+    text-decoration: none;
+  }
+  a:hover{
+    background-color: gray;
+  }
+}
+/*--------------- main ------------------*/
+
+
+
+/*--------------- footer ------------------*/
+footer{
+  background-color:gray;
+  margin-top: 1rem;
+  padding: $padding;
+  text-align: center;
+}
