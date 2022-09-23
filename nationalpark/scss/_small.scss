@@ -13,15 +13,6 @@ html {
   padding: 0;
 }
 
-//max-width
-header,
-nav,
-main,
-footer {
-  max-width: 60rem;
-  margin: auto;
-}
-
 /*--------------- body ------------------*/
 body{
   font-size: 16px;
@@ -30,44 +21,150 @@ body{
 }
 
 /*--------------- header ------------------*/
+div.topbar{
+  padding: $padding;
+  background-color: $darkColor;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 700;
+  p{
+    padding-left: 1%;
+    max-width: 60rem;
+    margin: auto;
+  }// end p
+}// end top bar
 div#headerWrapper{
   background-image: url(../images/header-small.jpg);
   height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
-header{
+header{ 
+  background-color: rgba(0,0,0,0.4) ;
   padding: $padding;
+  h1{
+    padding-left: 1%;
+    color: white;
+    max-width: 60rem;
+    margin: auto;
+  }
 }
 
+
 /*--------------- nav ------------------*/
+div#navWrapper{
+  background-color: $mainColor;
+}
 nav{
+  
+  button{
+    background: transparent;
+    border: none;
+    font-size:1.5rem;
+    padding: $padding;
+    color: white;
+  }// end button
+  button:hover{
+    color: darken(white, 20%);
+  }//end hover btn 
   ul{
+    display: none;
+    border-top:solid 1px rgba(255,255,255,0.1) ;
     margin: 0;
     padding: 0;
+  }// end ul
+  ul.open{
+    display: block;
   }
   li{
+    border-bottom: solid 1px rgba(255,255,255,0.1);
     list-style-type: none;
-  }
+  }// end li
   li.active{
-    background-color: pink;
-  }
+    background-color: darken($mainColor, 5%);
+  }// end active
   a{
     display: block;
     padding: $padding;
-    color: black;
+    color: white;
     text-decoration: none;
-  }
+  }// end a
   a:hover{
-    background-color: gray;
-  }
-}
+    background-color: lighten($mainColor, 10%);
+  }// and hover
+}// end vav
 /*--------------- main ------------------*/
-
+main{
+  h1{
+    padding: 0 2%;
+  }
+  $cbr:10px;
+  .card-deck{
+    display: flex;
+    flex-wrap: wrap;
+  }//end card-deck
+  .card{
+    border: 1px solid #999;
+    border-radius: $cbr;
+    margin: 1rem 2%;
+    text-align: center;
+    flex-basis: 100% ;
+    section{
+      padding: 1rem 0;
+      background-color: $lightColor;
+      color: white;
+      border-top-left-radius: $cbr - 1;
+      border-top-right-radius: $cbr - 1;
+    }// end of section
+    img{
+      width: 30%;
+      height: auto;
+      padding: 1rem;
+    }//end image
+    img.bus{
+      position: relative;
+      animation: busDrive 3s 2 ;
+    }
+    @keyframes busDrive{
+      0%{left:0px;}
+      50%{left: 100px;}
+      100%{left: 0px;}
+    }
+    img.clock:hover{
+      position: relative;
+      animation: clock 1s 2;
+    }
+    @keyframes clock{
+      0%{transform: rotate(0);}
+      50%{transform: rotate(180deg);}
+      100%{transform: rotate(360deg);}
+    }
+    p{
+      padding: 1rem 2vw;
+    }//end paragraph
+    a{
+      display: block;
+      background-color: $darkColor;
+      color: white;
+      padding: 1rem 0 ;
+      margin: 1rem 4vw ;
+      border-radius: $cbr;
+    }//end anchor
+    a:hover{
+      background-color: lighten($darkColor, 10%);
+    }//end hover
+  }//end of card
+  
+}
 
 
 /*--------------- footer ------------------*/
+div#footerWrapper{
+  background-color:$darkColor;
+}
 footer{
-  background-color:gray;
-  margin-top: 1rem;
+  color: white;
   padding: $padding;
   text-align: center;
 }

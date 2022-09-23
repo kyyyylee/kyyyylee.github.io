@@ -1,39 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>National Park</title>
     <!--style sheet-->
-    <link href="css/styles.min.css" rel="stylesheet">
+    <link href="css/styles.min.css" rel="stylesheet" />
     <!--google font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!--header-->
-<div id="headerWrapper">
-    <header>
-        <h1>Utah National Park</h1>
-        <h2>Bryce Canyon</h2>
-    </header>
-</div>
+    <div class="topbar"><p>Utah National Park</p></div>
+    <div id="headerWrapper">
+      <header>
+        <h1>Bryce Canyon</h1>
+      </header>
+    </div>
     <!--nav-->
-    <nav>
-        <ul>
-            <li class="active"><a href="index.html">Events</a></li>
-            <li><a href="#">Schedule a Visit</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">About Us</a></li>
+    <div id="navWrapper">
+      <nav>
+        <button id="hamburgerBtn">&#9776;</button>
+        <ul id="primaryNav">
+          <li><a href="index.html">Events</a></li>
+          <li class="active"><a href="#">Plan a Visit</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">About Us</a></li>
         </ul>
-    </nav>
+      </nav>
+    </div>
     <!--main-->
     <main>
-
+      <h1>Plan a Visit</h1>
+      <div class="card-deck">
+        <div class="card">
+          <section>Transportaion</section>
+          <img class="bus" src="images/bus.svg"/>
+          <p>
+            Scalable Vector Graphics is an XML-based vector image format for
+            two-dimensional graphics with support for interactivity and
+            animation. The SVG specification is an open standard developed by
+            the World Wide Web Consortium in 1999.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <!--end card 1-->
+        <div class="card">
+            <section>Maps</section>
+            <img src="images/map.svg"/>
+            <p>
+              Scalable Vector Graphics is an XML-based vector image format for
+              two-dimensional graphics with support for interactivity and
+              animation. The SVG specification is an open standard developed by
+              the World Wide Web Consortium in 1999.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <!--end card 2-->
+          <div class="card">
+            <section>Hikes</section>
+            <img src="images/mountain.svg" />
+            <p>
+              Scalable Vector Graphics is an XML-based vector image format for
+              two-dimensional graphics with support for interactivity and
+              animation. The SVG specification is an open standard developed by
+              the World Wide Web Consortium in 1999.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <!--end card 3-->
+          <div class="card">
+            <section>Activities</section>
+            <img src="images/sun.svg"/>
+            <p>
+              Scalable Vector Graphics is an XML-based vector image format for
+              two-dimensional graphics with support for interactivity and
+              animation. The SVG specification is an open standard developed by
+              the World Wide Web Consortium in 1999.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <!--end card 4-->
+          <div class="card">
+              <section>Download Flyer</section>
+              <img src="images/download.svg"/>
+              <p>
+                Scalable Vector Graphics is an XML-based vector image format for
+                two-dimensional graphics with support for interactivity and
+                animation. The SVG specification is an open standard developed by
+                the World Wide Web Consortium in 1999.
+              </p>
+              <a href="#">Learn More</a>
+            </div>
+            <!--end card 5-->
+            <div class="card">
+              <section>Our Hours</section>
+              <img class="clock" src="images/clock.svg" />
+              <p>
+                Scalable Vector Graphics is an XML-based vector image format for
+                two-dimensional graphics with support for interactivity and
+                animation. The SVG specification is an open standard developed by
+                the World Wide Web Consortium in 1999.
+              </p>
+              <a href="#">Learn More</a>
+            </div>
+            <!--end card 6-->
+      </div>// end card deck 
     </main>
     <!--footer-->
-    <footer>&copy; Kylee Harward 2022 &bull; DGM 2740 &bull; UVU</footer>
-</body>
+    <div id="footerWrapper">
+      <footer>&copy; Kylee Harward 2022 &bull; DGM 2740 &bull; UVU</footer>
+    </div>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
