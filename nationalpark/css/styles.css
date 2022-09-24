@@ -419,7 +419,7 @@ main .card {
 main .card section {
   padding: 1rem 0;
   background-color: #C28784;
-  color: white;
+  color: black;
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
 }
