@@ -1,0 +1,80 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/*  apply a natural box layout model to all elements  */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+//------body--------//
+body{
+  font-family: 'Barlow', sans-serif;
+  font-size: 16px;
+}
+
+//------header------//
+header{
+  background-color: $brownColor;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 2%;
+  h1{
+    margin: 0;
+  }
+  .headerText{
+    padding-left: 0.8rem;
+  }
+}
+
+//----nav------//
+nav{
+  background-color: $lightColor;
+  button{
+    background: transparent;
+    border: none;
+    padding: 0.8rem 2%;
+    font-size:2rem;
+  }// end button
+  button:hover{
+    color: $brownColor;
+  }//end hover btn 
+  ul{
+    display: none;
+    margin: 0;
+    padding: 0;
+  }// end ul
+  ul.open{
+    display: block;
+  }
+  li{
+    list-style-type: none;
+  }// end li
+  li.active{
+    background-color: darken($lightColor, 10%);
+  }// end active
+  a{
+    display: block;
+    padding: 0.8rem 2%;
+    text-decoration: none;
+    color: black;
+  }// end a
+  a:hover{
+    background-color: lighten($lightColor, 10%);
+  }// and hover
+}// end vav
+
+//-----main------//
+
+//----footer-----//
+footer{
+  background-color: $lightColor;
+  text-align: center;
+  padding: 0.8rem;
+}

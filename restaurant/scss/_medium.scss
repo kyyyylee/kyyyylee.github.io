@@ -1,0 +1,14 @@
+//nav display 
+nav{
+    button{
+        display: none;
+    }// end button
+    ul, ul.open{
+        display: flex;
+        justify-content: flex-start;
+    }// end of ul
+    a{
+        display: block;
+        padding:0.83rem 2rem;
+    }
+}// end nav
