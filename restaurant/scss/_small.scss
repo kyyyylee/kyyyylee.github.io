@@ -12,6 +12,13 @@ html {
   margin: 0;
   padding: 0;
 }
+
+//max-width
+header, nav, main, footer{
+  max-width:75rem;
+  margin: auto;
+}
+
 //------body--------//
 body{
   font-family: 'Barlow', sans-serif;
