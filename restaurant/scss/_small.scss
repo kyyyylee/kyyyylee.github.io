@@ -78,7 +78,14 @@ nav{
 }// end vav
 
 //-----main------//
-
+.hero{
+  width: 100%;
+  margin: 0;
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
 //----footer-----//
 footer{
   background-color: $lightColor;
