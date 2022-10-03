@@ -360,6 +360,18 @@ nav button {
 nav button:hover {
   color: #755D34;
 }
+nav button span:nth-child(1) {
+  display: block;
+}
+nav button span:nth-child(2) {
+  display: none;
+}
+nav button.open span:nth-child(1) {
+  display: none;
+}
+nav button.open span:nth-child(2) {
+  display: block;
+}
 nav ul {
   display: none;
   margin: 0;

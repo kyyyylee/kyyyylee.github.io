@@ -55,6 +55,22 @@ nav {
   button:hover {
     color: $brownColor;
   } //end hover btn
+
+  //---button switch---//
+  button span:nth-child(1){
+    display: block;
+  }
+  button span:nth-child(2){
+    display: none;
+  }
+  button.open span:nth-child(1){
+    display: none;
+  }
+  button.open span:nth-child(2){
+    display: block;
+  }
+  //---end button switch---//
+
   ul {
     display: none;
     margin: 0;
@@ -62,7 +78,7 @@ nav {
   } // end ul
   ul.open {
     display: block;
-  }
+  }//show when hamburger menu is clicked
   li {
     list-style-type: none;
   } // end li
@@ -88,7 +104,7 @@ main {
     img {
       width: 100%;
       height: auto;
-    }
+    }//end hero img
   }//end hero
   h2, p{
     padding:0.8rem 2%;
@@ -101,8 +117,8 @@ main {
     img{
       width: 100%;
       height: auto;
-    }
-  }
+    }//end founder img
+  }//end founder
 }//end main
 
 
@@ -113,4 +129,4 @@ footer {
   padding: 0.8rem;
   margin-top: 0.8rem;
   clear: both
-}
+}//end footer
