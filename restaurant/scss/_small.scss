@@ -14,81 +14,103 @@ html {
 }
 
 //max-width
-header, nav, main, footer{
-  max-width:75rem;
+header,
+nav,
+main,
+footer {
+  max-width: 75rem;
   margin: auto;
 }
 
 //------body--------//
-body{
-  font-family: 'Barlow', sans-serif;
+body {
+  font-family: "Barlow", sans-serif;
   font-size: 16px;
 }
 
 //------header------//
-header{
+header {
   background-color: $brownColor;
   color: white;
   display: flex;
   align-items: center;
   padding: 0.8rem 2%;
-  h1{
+  h1 {
     margin: 0;
   }
-  .headerText{
+  .headerText {
     padding-left: 0.8rem;
   }
 }
 
 //----nav------//
-nav{
+nav {
   background-color: $lightColor;
-  button{
+  button {
     background: transparent;
     border: none;
     padding: 0.8rem 2%;
-    font-size:2rem;
-  }// end button
-  button:hover{
+    font-size: 2rem;
+  } // end button
+  button:hover {
     color: $brownColor;
-  }//end hover btn 
-  ul{
+  } //end hover btn
+  ul {
     display: none;
     margin: 0;
     padding: 0;
-  }// end ul
-  ul.open{
+  } // end ul
+  ul.open {
     display: block;
   }
-  li{
+  li {
     list-style-type: none;
-  }// end li
-  li.active{
+  } // end li
+  li.active {
     background-color: darken($lightColor, 10%);
-  }// end active
-  a{
+  } // end active
+  a {
     display: block;
     padding: 0.8rem 2%;
     text-decoration: none;
     color: black;
-  }// end a
-  a:hover{
+  } // end a
+  a:hover {
     background-color: lighten($lightColor, 10%);
-  }// and hover
-}// end vav
+  } // and hover
+} // end vav
 
 //-----main------//
-.hero{
-  width: 100%;
-  margin: 0;
-  img{
+main {
+  .hero {
     width: 100%;
-    height: auto;
+    margin: 0;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }//end hero
+  h2, p{
+    padding:0.8rem 2%;
   }
-}
+  .founder{
+    display: block;
+    float: right;
+    width: 46%;
+    margin-left: 2%;
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+}//end main
+
+
 //----footer-----//
-footer{
+footer {
   background-color: $lightColor;
   text-align: center;
   padding: 0.8rem;
+  margin-top: 0.8rem;
+  clear: both
 }

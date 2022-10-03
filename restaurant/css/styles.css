@@ -321,7 +321,10 @@ html {
   padding: 0;
 }
 
-header, nav, main, footer {
+header,
+nav,
+main,
+footer {
   max-width: 75rem;
   margin: auto;
 }
@@ -381,11 +384,24 @@ nav a:hover {
   background-color: #eceada;
 }
 
-.hero {
+main .hero {
   width: 100%;
   margin: 0;
 }
-.hero img {
+main .hero img {
+  width: 100%;
+  height: auto;
+}
+main h2, main p {
+  padding: 0.8rem 2%;
+}
+main .founder {
+  display: block;
+  float: right;
+  width: 46%;
+  margin-left: 2%;
+}
+main .founder img {
   width: 100%;
   height: auto;
 }
@@ -394,6 +410,8 @@ footer {
   background-color: #DBD6B8;
   text-align: center;
   padding: 0.8rem;
+  margin-top: 0.8rem;
+  clear: both;
 }
 
 @media only screen and (min-width: 560px) {
