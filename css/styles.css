@@ -20,11 +20,22 @@ footer {
   max-width: 75rem;
   margin: auto;
 }
+@media only screen and (min-width: 825px) {
+     nav ul, ul.open{
+        display: flex;
+        justify-content: flex-end;
+    }
+    nav ul a{
+        display: block;
+        padding:1rem 1.5rem;
+    }
 
+} /* end of media query */
 header {
     padding: 0.8rem 1.5%;
     display: grid;
     grid-template-columns: 150px auto;
+    background-color:#BEC4AA;
   }
 .headerText{
     display: flex;
@@ -46,12 +57,12 @@ nav a{
     padding: 0.8rem 2%;
 }
 a:hover{
-    background-color: pink;
+    background-color: #eeeeee;
 }
 
 footer {
   padding: 0.8rem;
   text-align: center;
-  background-color: pink;
+  background-color: #BEC4AA;
   clear: both;
 }
