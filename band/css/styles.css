@@ -376,6 +376,15 @@ nav a:hover {
   background-color: #2f0d17;
 }
 
+main figure {
+  width: 100%;
+  margin: 0;
+}
+main figure img {
+  width: 100%;
+  height: auto;
+}
+
 footer {
   background-color: pink;
   color: #eaeaea;
