@@ -30,7 +30,7 @@ header {
 
 //header h1
 .heading h1 {
-  margin: 0.2rem;
+  margin-bottom: 0.5rem;
 }
 
 //nav
@@ -49,19 +49,23 @@ nav {
     display: none;
     background-color: darken(#4f1627, 4%);
     position: absolute;
-    top: 12%;
     right: 0;
+    top: 12%;
     width: 100%;
   } // end ul
   ul.open {
     display: block;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    width: 100%;
   } //show when hamburger menu is clicked
   ul li {
     list-style-type: none;
   } // end li
   li.active {
     background-color: lighten(#4f1627, 4%);
-  }
+  }//end active
   a {
     display: block;
     padding: 0.9rem 2vw;
@@ -71,9 +75,15 @@ nav {
   } // end a
   a:hover {
     background-color: darken(#4f1627, 8%);
-  }
+  }//end hover
 } // end vav
 main {
+  h1{
+    padding-left: 2%;
+  }//end h1
+  .gallery{
+    padding: 0.8rem 2%;
+  }//end gallery
   .gallery figure {
     width: 100%;
     margin: 0;
@@ -85,14 +95,44 @@ main {
   .member-section{
     display: flex;
     flex-wrap: wrap;
+    margin: 2%;
+    justify-content: space-between;
   }//end member section
   .member{
     flex-basis: 100%;
-  }
-}
+    padding-bottom: 0.8rem;
+  }//end member
+  .member h3{
+    padding: 0 0 0.8rem 0;
+  }//end h3
+  .member .circle img{
+    float: right;
+    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    margin: 0 0 .5rem .5rem;
+  } //end circle
+  .member .arc img{
+    float: right;
+    shape-outside: circle(100% at 100% 0%);
+    clip-path: circle(100% at 100% 0%);
+    margin: 0 0 .5rem .5rem;
+  }//end arc
+  .member .triangle img{
+    float: right;
+    shape-outside: polygon(0 0, 0 100%, 100% 0);
+    clip-path: polygon(0 0,100% 0, 0 100%);
+    margin: 0 0 .5rem .5rem;
+  }//end triangle
+  .member .poly img{
+    float: right;
+    shape-outside: polygon(0 0, 100% 0, 50% 100%);
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    margin: 0 0 .5rem .5rem;
+  }//end poly
+}//end main
 //footer
 footer {
-  background-color: pink;
+  background-color: #4f1627;
   color: #eaeaea;
   padding: 0.8rem 2%;
   text-align: center;
