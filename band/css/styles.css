@@ -350,12 +350,10 @@ nav button {
 }
 nav ul {
   display: none;
-  margin: 0;
-  padding: 0;
   background-color: #3f121f;
   position: absolute;
-  right: 0;
   top: 12%;
+  right: 0;
   width: 100%;
 }
 nav ul.open {
@@ -379,12 +377,40 @@ nav a:hover {
 }
 
 footer {
-  background-color: #4F1627;
+  background-color: pink;
   color: #eaeaea;
   padding: 0.8rem 2%;
   text-align: center;
-  clear: both;
 }
 
-/* end of media query */
-/* end of media query */
+@media only screen and (min-width: 560px) {
+  nav ul {
+    width: 250px;
+  }
+} /* end of media query */
+@media only screen and (min-width: 1028px) {
+  header, main, footer {
+    max-width: 75rem;
+    margin: auto;
+  }
+  nav {
+    justify-self: end;
+  }
+  nav button {
+    display: none;
+  }
+  nav ul, nav ul.open {
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    width: auto;
+  }
+  nav ul li a {
+    border-radius: 10px;
+    display: block;
+    padding: 0.83rem 2rem;
+  }
+  nav ul li.active {
+    border-radius: 10px;
+  }
+} /* end of media query */

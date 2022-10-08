@@ -1,0 +1,26 @@
+header, main, footer{
+    max-width: 75rem;
+    margin: auto;
+}
+//nav display 
+nav{
+    button{
+        display: none;
+    }// end button
+    justify-self: end;
+    ul, ul.open{
+        background-color: transparent;
+        position: relative;
+        display: flex;
+        width: auto;
+    }// end of ul
+    ul li a{
+        border-radius:10px;
+        display: block;
+        padding:0.83rem 2rem;
+    }
+    ul li.active{
+        border-radius: 10px;
+    }
+    
+}// end nav

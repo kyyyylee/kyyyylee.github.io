@@ -48,12 +48,10 @@ nav {
   } // end button
   ul {
     display: none;
-    margin: 0;
-    padding: 0;
     background-color: darken(#4F1627, 4%);
     position: absolute;
-    right: 0;
     top: 12%;
+    right: 0;
     width: 100%;
   } // end ul
   ul.open {
@@ -79,9 +77,8 @@ nav {
 
 //footer
 footer{
-  background-color: #4F1627;
+  background-color: pink;
   color: #eaeaea;
   padding: 0.8rem 2%;
   text-align: center;
-  clear: both;
 }
