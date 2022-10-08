@@ -12,3 +12,76 @@ html {
   margin: 0;
   padding: 0;
 }
+
+//body here
+body{
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+//header here
+header{
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #4F1627;
+  color: #eaeaea;
+  padding: 0.8rem 2%;
+}
+
+//header h1
+.heading h1{
+  margin: 0.2rem;
+}
+
+
+//nav
+nav {
+  button {
+    background: transparent;
+    border: none;
+    padding: .5rem 2vw .5rem 1rem;
+    font-size: 2rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #eaeaea;
+  } // end button
+  ul {
+    display: none;
+    margin: 0;
+    padding: 0;
+    background-color: darken(#4F1627, 4%);
+    position: absolute;
+    right: 0;
+    top: 12%;
+    width: 100%;
+  } // end ul
+  ul.open {
+    display: block;
+  }//show when hamburger menu is clicked
+  ul li {
+    list-style-type: none;
+  } // end li
+  li.active{
+    background-color: lighten(#4F1627, 4%);
+  } 
+  a {
+    display: block;
+    padding: 0.9rem 2vw;
+    text-decoration: none;
+    color: white;
+    text-align: right;
+  } // end a
+  a:hover{
+    background-color: darken(#4F1627, 8%);
+  }
+} // end vav
+
+//footer
+footer{
+  background-color: #4F1627;
+  color: #eaeaea;
+  padding: 0.8rem 2%;
+  text-align: center;
+  clear: both;
+}
