@@ -329,7 +329,7 @@ body {
 header {
   display: grid;
   grid-template-columns: auto auto;
-  background-color: #4F1627;
+  background-color: #4f1627;
   color: #eaeaea;
   padding: 0.8rem 2%;
 }
@@ -376,13 +376,20 @@ nav a:hover {
   background-color: #2f0d17;
 }
 
-main figure {
+main .gallery figure {
   width: 100%;
   margin: 0;
 }
-main figure img {
+main .gallery figure img {
   width: 100%;
   height: auto;
+}
+main .member-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .member {
+  flex-basis: 100%;
 }
 
 footer {
@@ -395,6 +402,9 @@ footer {
 @media only screen and (min-width: 560px) {
   nav ul {
     width: 250px;
+  }
+  main .member {
+    flex-basis: 50%;
   }
 } /* end of media query */
 @media only screen and (min-width: 1028px) {
@@ -421,5 +431,8 @@ footer {
   }
   nav ul li.active {
     border-radius: 10px;
+  }
+  main .member {
+    flex-basis: 25%;
   }
 } /* end of media query */
