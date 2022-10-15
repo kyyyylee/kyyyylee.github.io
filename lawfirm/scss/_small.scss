@@ -13,11 +13,71 @@ html {
   padding: 0;
 }
 
-header{
-  display: grid;
-  grid-template-columns: 50px auto 44px;
+//-------------max-width----------//
+header, nav, main, footer{
+  max-width: 75rem;
+  margin: auto;
 }
-
+//-------------body-----------//
 body{
   display: grid;
+  font-family: 'Bitter', serif;
+  font-size: 16px;
 }
+
+//------------header------------//
+div#headerWrapper{
+  grid-row-start: 1;
+  background-color: $yellow;
+  border-top: solid 9px $red;
+}//end wrapper
+header{
+  display: grid;
+  grid-template-columns: 100px auto 44px;
+  padding: 0.8rem 2vw;
+  h1{
+    padding-left: 1rem;
+    align-self: center;
+  }//end h1
+  div#phone{
+    display: none;
+  }//end phone
+}//end header
+
+//---------nav------------//
+div#navWrapper{
+  grid-row-start: 4;
+}//end nav wrapper
+div#hamburger a, div#closex a {
+  display: block;
+  color: black;
+  padding: .8rem 2vw;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-align: right;
+}//end anchors
+div#closex a{
+  margin-right: 2vw;
+}//end closex
+nav{
+  height: 100vh;
+  ul{
+    border-bottom: 1px solod #eee;
+  }//end ul
+  ul li{
+    border-top: solid 1px #eee;
+  }//end li
+  ul li a{
+    display: block;
+    color: black;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    text-align: right;
+  }//end a
+  ul li a:hover{
+    color: $red;
+  }
+  ul li.active{
+    background-color: lighten($yellow, 20%);
+  }
+}//end nav

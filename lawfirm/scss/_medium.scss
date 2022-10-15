@@ -1,0 +1,49 @@
+//------------header------------//
+header{
+    grid-template-columns: 100px auto auto;
+    div#phone{
+        display: block;
+        justify-self: end;
+        align-self: center;
+        a{
+            color: $red;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: 300;
+        }//end a
+        a:hover{
+            color:darken($red, 20%);
+        }//end hover
+    }//end phone
+}//end header
+
+//--------------nav----------------//
+nav{
+    height: auto;
+    ul{
+        display: flex;
+        justify-content: end;
+        border: none;
+        list-style-type: none;
+        li{
+            border: none;
+        }//end li
+    }//end ul
+}//end nav
+div#hamburger, div#closex{
+    display: none;
+}//end hamburger close x
+
+//-----------------structure----------------//
+div#headerWrapper{
+    grid-row-start: 1;
+}
+div#navWrapper{
+    grid-row-start: 2;
+}
+div#mainWrapper{
+    grid-row-start: 3;
+}
+div#footerWrapper{
+    grid-row-start: 4;
+}
