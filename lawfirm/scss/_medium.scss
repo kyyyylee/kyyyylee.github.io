@@ -47,3 +47,9 @@ div#mainWrapper{
 div#footerWrapper{
     grid-row-start: 4;
 }
+
+//------------columns-----------// 
+@for $i from 0 through 12{
+    $w:($i / 12) * 100%;
+    .medium-#{$i} {flex-basis: $w;}
+  }//end loop

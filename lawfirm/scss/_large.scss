@@ -7,3 +7,9 @@ nav ul li a{
     border-radius: 10px;
     margin: .5rem 0;
 }//end anchor
+
+//------------columns---------// 
+@for $i from 0 through 12{
+    $w:($i / 12) * 100%;
+    .large-#{$i} {flex-basis: $w;}
+  }//end loop

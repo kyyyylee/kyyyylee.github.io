@@ -391,6 +391,99 @@ nav ul li.active {
   background-color: #e8d09d;
 }
 
+div.flexed {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  padding: 0 2vw;
+}
+
+.small-0 {
+  flex-basis: 0%;
+}
+
+.small-1 {
+  flex-basis: 8.3333333333%;
+}
+
+.small-2 {
+  flex-basis: 16.6666666667%;
+}
+
+.small-3 {
+  flex-basis: 25%;
+}
+
+.small-4 {
+  flex-basis: 33.3333333333%;
+}
+
+.small-5 {
+  flex-basis: 41.6666666667%;
+}
+
+.small-6 {
+  flex-basis: 50%;
+}
+
+.small-7 {
+  flex-basis: 58.3333333333%;
+}
+
+.small-8 {
+  flex-basis: 66.6666666667%;
+}
+
+.small-9 {
+  flex-basis: 75%;
+}
+
+.small-10 {
+  flex-basis: 83.3333333333%;
+}
+
+.small-11 {
+  flex-basis: 91.6666666667%;
+}
+
+.small-12 {
+  flex-basis: 100%;
+}
+
+main .lawyerCard {
+  margin: 2vw 0;
+  text-align: center;
+}
+main .lawyerCard h3 {
+  padding: 1rem 0;
+}
+main .lawyerCard .lawyerPic {
+  width: 100%;
+  margin: 0;
+}
+main .lawyerCard .lawyerPic img {
+  width: 100%;
+  height: auto;
+}
+main .lawyerCard button {
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+}
+main .lawyerButtons {
+  padding: 1rem;
+}
+
+footer {
+  background-color: #D5A94A;
+  text-align: center;
+}
+footer i {
+  padding: 0.8rem 4vw;
+  font-size: 2rem;
+}
+
 @media only screen and (min-width: 560px) {
   header {
     grid-template-columns: 100px auto auto;
@@ -436,6 +529,45 @@ nav ul li.active {
   div#footerWrapper {
     grid-row-start: 4;
   }
+  .medium-0 {
+    flex-basis: 0%;
+  }
+  .medium-1 {
+    flex-basis: 8.3333333333%;
+  }
+  .medium-2 {
+    flex-basis: 16.6666666667%;
+  }
+  .medium-3 {
+    flex-basis: 25%;
+  }
+  .medium-4 {
+    flex-basis: 33.3333333333%;
+  }
+  .medium-5 {
+    flex-basis: 41.6666666667%;
+  }
+  .medium-6 {
+    flex-basis: 50%;
+  }
+  .medium-7 {
+    flex-basis: 58.3333333333%;
+  }
+  .medium-8 {
+    flex-basis: 66.6666666667%;
+  }
+  .medium-9 {
+    flex-basis: 75%;
+  }
+  .medium-10 {
+    flex-basis: 83.3333333333%;
+  }
+  .medium-11 {
+    flex-basis: 91.6666666667%;
+  }
+  .medium-12 {
+    flex-basis: 100%;
+  }
 } /* end of media query */
 @media only screen and (min-width: 1028px) {
   div#navWrapper {
@@ -445,5 +577,44 @@ nav ul li.active {
     padding: 0.2rem 1rem;
     border-radius: 10px;
     margin: 0.5rem 0;
+  }
+  .large-0 {
+    flex-basis: 0%;
+  }
+  .large-1 {
+    flex-basis: 8.3333333333%;
+  }
+  .large-2 {
+    flex-basis: 16.6666666667%;
+  }
+  .large-3 {
+    flex-basis: 25%;
+  }
+  .large-4 {
+    flex-basis: 33.3333333333%;
+  }
+  .large-5 {
+    flex-basis: 41.6666666667%;
+  }
+  .large-6 {
+    flex-basis: 50%;
+  }
+  .large-7 {
+    flex-basis: 58.3333333333%;
+  }
+  .large-8 {
+    flex-basis: 66.6666666667%;
+  }
+  .large-9 {
+    flex-basis: 75%;
+  }
+  .large-10 {
+    flex-basis: 83.3333333333%;
+  }
+  .large-11 {
+    flex-basis: 91.6666666667%;
+  }
+  .large-12 {
+    flex-basis: 100%;
   }
 } /* end of media query */

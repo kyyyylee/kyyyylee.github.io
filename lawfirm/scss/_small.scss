@@ -81,3 +81,53 @@ nav{
     background-color: lighten($yellow, 20%);
   }
 }//end nav
+
+
+//--------columns----------// 
+div.flexed{
+  display: flex;
+  flex-wrap: wrap;
+}
+.column{
+  padding: 0 2vw;
+}
+@for $i from 0 through 12{
+  $w:($i / 12) * 100%;
+  .small-#{$i} {flex-basis: $w;}
+}//end loop
+
+//--------main---------//
+main{
+  .lawyerCard{
+    margin: 2vw 0;
+    text-align: center;
+    h3{
+      padding: 1rem 0;
+    }
+    .lawyerPic{
+      width: 100%;
+      margin: 0;
+      img{
+        width: 100%;
+        height: auto;
+      }//end img
+    }//end lawyerPic
+    button{
+      padding: 0.5rem 1rem;
+      margin: 1rem 0;
+    }//end button
+  }//end lawyer card
+  .lawyerButtons{
+    padding: 1rem;
+   }//end call to action
+}//end main
+
+//---------footer---------//
+footer{
+  background-color: $yellow;
+  text-align: center;
+  i{
+    padding: 0.8rem 4vw;
+    font-size: 2rem;
+  }
+}
