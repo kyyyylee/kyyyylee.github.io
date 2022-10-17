@@ -377,60 +377,60 @@ div.flexed {
 }
 
 .small-0 {
-  flex-basis: -4%;
+  flex-basis: -2%;
 }
 
 .small-1 {
-  flex-basis: 4.3333333333%;
+  flex-basis: 6.3333333333%;
 }
 
 .small-2 {
-  flex-basis: 12.6666666667%;
+  flex-basis: 14.6666666667%;
 }
 
 .small-3 {
-  flex-basis: 21%;
+  flex-basis: 23%;
 }
 
 .small-4 {
-  flex-basis: 29.3333333333%;
+  flex-basis: 31.3333333333%;
 }
 
 .small-5 {
-  flex-basis: 37.6666666667%;
+  flex-basis: 39.6666666667%;
 }
 
 .small-6 {
-  flex-basis: 46%;
+  flex-basis: 48%;
 }
 
 .small-7 {
-  flex-basis: 54.3333333333%;
+  flex-basis: 56.3333333333%;
 }
 
 .small-8 {
-  flex-basis: 62.6666666667%;
+  flex-basis: 64.6666666667%;
 }
 
 .small-9 {
-  flex-basis: 71%;
+  flex-basis: 73%;
 }
 
 .small-10 {
-  flex-basis: 79.3333333333%;
+  flex-basis: 81.3333333333%;
 }
 
 .small-11 {
-  flex-basis: 87.6666666667%;
+  flex-basis: 89.6666666667%;
 }
 
 .small-12 {
-  flex-basis: 96%;
+  flex-basis: 98%;
 }
 
 main .lawyerCard {
   background-color: #f2e4c6;
-  margin: 2vw 2%;
+  margin: 1vw 1%;
   text-align: center;
 }
 main .lawyerCard h3 {
@@ -450,30 +450,33 @@ main .lawyerCard button {
 }
 main .lawyerButtons {
   padding: 1rem;
-  margin: 2%;
+  margin: 1%;
 }
-main .blogPost {
+main .blogPost, main .tipFAQ {
   background-color: #999;
-  margin: 2%;
+  margin: 1vw 1%;
 }
-main .blogPost figure {
+main .blogPost figure, main .tipFAQ figure {
   width: 100%;
   margin: 0;
 }
-main .blogPost figure img {
+main .blogPost figure img, main .tipFAQ figure img {
   width: 100%;
   height: auto;
 }
-main .blogPost h3 {
+main .blogPost h3, main .tipFAQ h3 {
   padding: 0.8rem;
 }
-main .blogPost p {
+main .blogPost p, main .tipFAQ p {
   padding: 0.8rem 2vw;
 }
-main .blogPost h4 {
+main .blogPost h4, main .tipFAQ h4 {
   text-align: center;
   background-color: #eee;
   padding: 2vw 0;
+}
+main .tipFAQ h4 {
+  background-color: transparent;
 }
 
 footer {
@@ -531,43 +534,43 @@ footer i {
     grid-row-start: 4;
   }
   .medium-0 {
-    flex-basis: -4%;
+    flex-basis: -2%;
   }
   .medium-1 {
-    flex-basis: 4.3333333333%;
+    flex-basis: 6.3333333333%;
   }
   .medium-2 {
-    flex-basis: 12.6666666667%;
+    flex-basis: 14.6666666667%;
   }
   .medium-3 {
-    flex-basis: 21%;
+    flex-basis: 23%;
   }
   .medium-4 {
-    flex-basis: 29.3333333333%;
+    flex-basis: 31.3333333333%;
   }
   .medium-5 {
-    flex-basis: 37.6666666667%;
+    flex-basis: 39.6666666667%;
   }
   .medium-6 {
-    flex-basis: 46%;
+    flex-basis: 48%;
   }
   .medium-7 {
-    flex-basis: 54.3333333333%;
+    flex-basis: 56.3333333333%;
   }
   .medium-8 {
-    flex-basis: 62.6666666667%;
+    flex-basis: 64.6666666667%;
   }
   .medium-9 {
-    flex-basis: 71%;
+    flex-basis: 73%;
   }
   .medium-10 {
-    flex-basis: 79.3333333333%;
+    flex-basis: 81.3333333333%;
   }
   .medium-11 {
-    flex-basis: 87.6666666667%;
+    flex-basis: 89.6666666667%;
   }
   .medium-12 {
-    flex-basis: 96%;
+    flex-basis: 98%;
   }
 } /* end of media query */
 @media only screen and (min-width: 1028px) {
@@ -580,42 +583,42 @@ footer i {
     margin: 0.5rem 0;
   }
   .large-0 {
-    flex-basis: -4%;
+    flex-basis: -2%;
   }
   .large-1 {
-    flex-basis: 4.3333333333%;
+    flex-basis: 6.3333333333%;
   }
   .large-2 {
-    flex-basis: 12.6666666667%;
+    flex-basis: 14.6666666667%;
   }
   .large-3 {
-    flex-basis: 21%;
+    flex-basis: 23%;
   }
   .large-4 {
-    flex-basis: 29.3333333333%;
+    flex-basis: 31.3333333333%;
   }
   .large-5 {
-    flex-basis: 37.6666666667%;
+    flex-basis: 39.6666666667%;
   }
   .large-6 {
-    flex-basis: 46%;
+    flex-basis: 48%;
   }
   .large-7 {
-    flex-basis: 54.3333333333%;
+    flex-basis: 56.3333333333%;
   }
   .large-8 {
-    flex-basis: 62.6666666667%;
+    flex-basis: 64.6666666667%;
   }
   .large-9 {
-    flex-basis: 71%;
+    flex-basis: 73%;
   }
   .large-10 {
-    flex-basis: 79.3333333333%;
+    flex-basis: 81.3333333333%;
   }
   .large-11 {
-    flex-basis: 87.6666666667%;
+    flex-basis: 89.6666666667%;
   }
   .large-12 {
-    flex-basis: 96%;
+    flex-basis: 98%;
   }
 } /* end of media query */

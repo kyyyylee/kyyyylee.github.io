@@ -92,14 +92,14 @@ div.flexed{
 
 @for $i from 0 through 12{
   $w:($i / 12) * 100%;
-  .small-#{$i} {flex-basis: calc($w - 4%);}
+  .small-#{$i} {flex-basis: calc($w - 2%);}
 }//end loop
 
 //--------main---------//
 main{
   .lawyerCard{
     background-color: lighten($color: $yellow, $amount: 30);
-    margin: 2vw 2%;
+    margin: 1vw 1%;
     text-align: center;
     h3{
       padding: 1rem 0;
@@ -119,11 +119,11 @@ main{
   }//end lawyer card
   .lawyerButtons{
     padding: 1rem;
-    margin: 2%;
+    margin: 1%;
    }//end call to action
-   .blogPost{
+   .blogPost, .tipFAQ{
     background-color: #999;
-    margin: 2%;
+    margin: 1vw 1%;
     figure{
       width: 100%;
       margin: 0;
@@ -144,6 +144,9 @@ main{
       padding: 2vw 0;
     }
    }//end blog post
+   .tipFAQ h4{
+    background-color: transparent;
+  }
 }//end main
 
 //---------footer---------//
