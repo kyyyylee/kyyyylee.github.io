@@ -92,14 +92,14 @@ div.flexed{
 
 @for $i from 0 through 12{
   $w:($i / 12) * 100%;
-  .small-#{$i} {flex-basis: calc($w - 2%);}
+  .small-#{$i} {flex-basis: calc($w - 4%);}
 }//end loop
 
 //--------main---------//
 main{
   .lawyerCard{
     background-color: lighten($color: $yellow, $amount: 30);
-    margin: 2vw 1%;
+    margin: 2vw 2%;
     text-align: center;
     h3{
       padding: 1rem 0;
@@ -119,8 +119,31 @@ main{
   }//end lawyer card
   .lawyerButtons{
     padding: 1rem;
-    margin: 1%;
+    margin: 2%;
    }//end call to action
+   .blogPost{
+    background-color: #999;
+    margin: 2%;
+    figure{
+      width: 100%;
+      margin: 0;
+    }//end figure
+    figure img{
+      width: 100%;
+      height: auto;
+    }//end img
+    h3{
+      padding: 0.8rem;
+    }
+    p{
+      padding: 0.8rem 2vw;
+    }
+    h4{
+      text-align: center;
+      background-color: #eee;
+      padding: 2vw 0;
+    }
+   }//end blog post
 }//end main
 
 //---------footer---------//

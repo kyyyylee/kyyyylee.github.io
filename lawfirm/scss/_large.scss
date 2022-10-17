@@ -11,5 +11,5 @@ nav ul li a{
 //------------columns---------// 
 @for $i from 0 through 12{
     $w:($i / 12) * 100%;
-    .large-#{$i} {flex-basis: calc($w - 2%);}
+    .large-#{$i} {flex-basis: calc($w - 4%);}
   }//end loop
