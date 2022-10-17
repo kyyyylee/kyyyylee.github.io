@@ -351,7 +351,7 @@ nav {
   height: 100vh;
 }
 nav ul {
-  border-bottom: 1px solod #eee;
+  border-bottom: 1px solid #eee;
 }
 nav ul li {
   border-top: solid 1px #eee;
@@ -377,7 +377,7 @@ div.flexed {
 }
 
 .small-0 {
-  flex-basis: -2%;
+  flex-basis: 0%;
 }
 
 .small-1 {
@@ -534,7 +534,7 @@ footer i {
     grid-row-start: 4;
   }
   .medium-0 {
-    flex-basis: -2%;
+    flex-basis: 0%;
   }
   .medium-1 {
     flex-basis: 6.3333333333%;
@@ -583,7 +583,7 @@ footer i {
     margin: 0.5rem 0;
   }
   .large-0 {
-    flex-basis: -2%;
+    flex-basis: -0;
   }
   .large-1 {
     flex-basis: 6.3333333333%;

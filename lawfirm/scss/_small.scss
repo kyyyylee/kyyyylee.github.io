@@ -62,7 +62,7 @@ div#closex a{
 nav{
   height: 100vh;
   ul{
-    border-bottom: 1px solod #eee;
+    border-bottom: 1px solid #eee;
   }//end ul
   ul li{
     border-top: solid 1px #eee;
@@ -92,7 +92,7 @@ div.flexed{
 
 @for $i from 0 through 12{
   $w:($i / 12) * 100%;
-  .small-#{$i} {flex-basis: calc($w - 2%);}
+  .small-#{$i} {flex-basis: calc($w - 2);}
 }//end loop
 
 //--------main---------//
