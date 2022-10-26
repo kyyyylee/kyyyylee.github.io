@@ -12,3 +12,112 @@ html {
   margin: 0;
   padding: 0;
 }
+
+//body
+body{
+  font-family: 'Prompt', sans-serif;
+  font-size: 16px;
+}
+
+//header
+header{
+  padding: 0.8rem 2vw;
+  background-color: lighten($pink, 10%);
+}//end header
+
+//nav
+nav{
+  background-color: $blue;
+  button{
+    position: relative;
+    height: 44px;
+    width: 44px;
+    background: none;
+    border: none;
+    .line{
+      position: absolute;
+      height: 2px;
+      width: 60%;
+      left: 20%;
+      background-color: white;
+      transition: all .3s ease;
+    }//end line
+    .top{top: 29%;}
+    .middle{top: 48%;}
+    .bottom{top: 67%;}
+  }//end button  
+  #hamburgerBtn.open{
+    .top{
+      transform: rotate(45deg);
+      top: 48%;
+    }
+    .middle, .bottom{
+      transform: rotate(-45deg);
+      top: 48%;
+    }
+  }//end trans
+  ul{
+    display: none;
+    margin: 0;
+    padding: 0;
+  }//hide when not open
+  ul.open{
+    display: block;
+  }//display when open
+  ul li a{
+    display: block;
+    padding: 0.8rem 2vw;
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+  }//end anchors
+  .active{
+    background-color: $pink;
+  }//end active
+  a:hover{
+    background-color: lighten($pink, 10%);
+  }//end hover
+}//end nav
+
+//main
+main{
+  //max-width
+  max-width: 80rem;
+  margin: auto;
+  //storyGrid
+  div.storyGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    //span in grid
+    span{
+      display: block;
+      text-align: center;
+      font-size: .75rem;
+    }//end span
+    .teaser, .lead{
+      padding: .5rem 2vw;
+    }
+    .teaser img, .lead img{
+      width: 100%;
+    }
+    .lead{
+      grid-column: 1 / span 2;
+    }//end lead
+  }//end storyGrid
+}//end main
+
+//footer
+footer{
+  background-color: $blue;
+  color: white;
+  padding: 0.8rem 2vw;
+  div{
+    padding: 0.8rem 0;
+  }
+  .barFoot{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 0.8rem;
+  }
+}//end footer
