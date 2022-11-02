@@ -16,11 +16,22 @@ html {
 }
 
 //max width
-header, nav, main, footer{
+header, #headerWrapper, nav, main, footer{
   max-width: 64rem;
   margin: auto;
 }
 
+//header
+div#headerWrapper{
+  background-image: url(../images/boston.webp);
+  height: 175px;
+}
+header{
+  padding: 0.8rem 2%;
+  background-color: rgba(0,0,0,0.4);
+  height: 175px;
+  color: white;
+}
 //main
 main{
   .swiper-wrapper{
