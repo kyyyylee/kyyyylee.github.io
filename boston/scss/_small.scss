@@ -12,3 +12,33 @@ html {
   margin: 0;
   padding: 0;
 }
+
+//max width
+header, nav, main, footer{
+  max-width: 64rem;
+  margin: auto;
+}
+
+main{
+  .swiper-wrapper{
+    margin-bottom: 25px;
+  }//end swiper-wrapper
+  .swiper{
+    width: 100%;
+    height: auto;
+    img{
+      width: 100%;
+      display: block;
+    }//end img
+    p{
+      margin: 0;
+      padding: .4rem 2vw;
+      position: absolute;
+      transform: translateY(-100%);
+      background-color: rgba(0,0,0,0.5);
+      text-align: center;
+      color: white;
+      width: 100%;
+    }//end p
+  }//end swiper
+}//end main

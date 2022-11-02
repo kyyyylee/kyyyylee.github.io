@@ -7,6 +7,7 @@
     <title>Title</title>
     <!--style sheet-->
     <link href="css/styles.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <!--google font-->
 </head>
 <body>
@@ -25,10 +26,53 @@
     </nav>
     <!--main-->
     <main>
-
+    <!-- Slider main container -->
+        <div class="swiper">
+             <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <picture>
+                        <source media="(max-width: 560px)" srcset="images/boston01-square.jpg">
+                        <source media="(min-width: 560px)" srcset="images/boston01-landscape.jpg">
+                        <img src="images/boston01-landscape.jpg" alt="sushiHero">
+                    </picture>
+                    <p></p>
+                </div><!-- end slide -->
+                <div class="swiper-slide">
+                    <picture>
+                        <source media="(max-width: 560px)" srcset="images/boston02-square.jpg">
+                        <source media="(min-width: 560px)" srcset="images/boston02-landscape.jpg">
+                        <img src="images/boston02-landscape.jpg" alt="sushiHero">
+                    </picture>
+                    <p></p>
+                </div><!-- end slide -->
+                <div class="swiper-slide">
+                    <picture>
+                        <source media="(max-width: 560px)" srcset="images/boston03-square.jpg">
+                        <source media="(min-width: 560px)" srcset="images/boston03-landscape.jpg">
+                        <img src="images/boston03-landscape.jpg" alt="sushiHero">
+                    </picture>
+                    <p></p>
+                </div><!-- end slide -->
+                <div class="swiper-slide">
+                    <picture>
+                        <source media="(max-width: 560px)" srcset="images/boston04-square.jpg">
+                        <source media="(min-width: 560px)" srcset="images/boston04-landscape.jpg">
+                        <img src="images/boston04-landscape.jpg" alt="sushiHero">
+                    </picture>
+                    <p></p>
+                </div><!-- end slide -->
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
     </main>
     <!--footer-->
     <footer>&copy; Kylee Harward 2022 &bull; Login</footer>
-<script src="js/scripts.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
