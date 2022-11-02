@@ -19,6 +19,7 @@ header, nav, main, footer{
   margin: auto;
 }
 
+//main
 main{
   .swiper-wrapper{
     margin-bottom: 25px;
@@ -35,10 +36,16 @@ main{
       padding: .4rem 2vw;
       position: absolute;
       transform: translateY(-100%);
-      background-color: rgba(0,0,0,0.5);
+      background-color: rgba(0,0,0,0.7);
       text-align: center;
       color: white;
       width: 100%;
     }//end p
   }//end swiper
 }//end main
+
+footer{
+  text-align: center;
+  padding: 0.8rem 2vw;
+  background-color: #eaeaea;
+}

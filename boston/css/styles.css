@@ -342,10 +342,16 @@ main .swiper p {
   padding: 0.4rem 2vw;
   position: absolute;
   transform: translateY(-100%);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
   color: white;
   width: 100%;
+}
+
+footer {
+  text-align: center;
+  padding: 0.8rem 2vw;
+  background-color: #eaeaea;
 }
 
 /* end of media query */
