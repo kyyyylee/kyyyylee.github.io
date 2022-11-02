@@ -9,6 +9,9 @@
     <link href="css/styles.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
     <!--header-->
@@ -17,7 +20,9 @@
     </header>
     
     <nav>
+        <button id="hamburgerBtn">&#9776;</button>
        <ul id="primaryNav">
+            <li class="active"><a href="#">About Us</a></li>
             <li class="parent"><a href="#">Departments</a>
                 <ul>
                     <li><a href="#">Landfill</a></li>
@@ -25,6 +30,14 @@
                     <li><a href="#">Parks and Rec</a></li>
                 </ul>
             </li><!--end parent-->
+            <li class="parent"><a href="#">Administration</a>
+                <ul>
+                    <li><a href="#">Mayor</a></li>
+                    <li><a href="#">Council</a></li>
+                    <li><a href="#">Staff</a></li>
+                </ul>
+            </li><!--end parent-->
+            <li><a href="#">Contact Us</a></li>
        </ul><!--end primary-->
     </nav>
     <!--main-->

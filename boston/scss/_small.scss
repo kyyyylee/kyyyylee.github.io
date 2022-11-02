@@ -11,6 +11,8 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
 }
 
 //max width
@@ -22,7 +24,7 @@ header, nav, main, footer{
 //main
 main{
   .swiper-wrapper{
-    margin-bottom: 25px;
+    margin-bottom: 40px;
   }//end swiper-wrapper
   .swiper{
     width: 100%;
@@ -47,5 +49,5 @@ main{
 footer{
   text-align: center;
   padding: 0.8rem 2vw;
-  background-color: #eaeaea;
+  background-color: #575B87;
 }

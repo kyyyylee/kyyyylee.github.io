@@ -11,3 +11,9 @@ const swiper = new Swiper('.swiper', {
         delay: 5000,
     },
   });
+
+const hb = document.querySelector('#hamburgerBtn');
+
+hb.addEventListener('click' , () => {
+    document.querySelector('#primaryNav').classList.toggle('open')
+})
