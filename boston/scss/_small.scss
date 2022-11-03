@@ -55,6 +55,57 @@ main{
       width: 100%;
     }//end p
   }//end swiper
+  div.cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2%;
+  }
+  div.cards div{
+    flex-basis: 100%;
+    text-align: center;
+  }
+  div.cards div:nth-child(1) {
+    background-image: url(../images/card1.webp);
+  }//end card 1
+  div.cards div:nth-child(2) {
+    background-image: url(../images/card2.jpg);
+  }//end card 2
+  div.cards div:nth-child(3) {
+    background-image: url(../images/card3.jpg);
+  }//end card 3
+  div.cards div:nth-child(4) {
+    background-image: url(../images/card4.jpg);
+  }//end card 4
+  div.cards div a{
+    display: block;
+    width: 100%;
+    height: 560px;
+    text-decoration: none;
+    padding: 0 2%;
+  }
+  div.cards div:nth-child(1) a {
+    background-color: #575B87;
+  }//end card 1
+  div.cards div:nth-child(2) a {
+    background-color: #8E7B61;
+  }//end card 2
+  div.cards div:nth-child(3) a {
+    background-color: #42261C;
+  }//end card 3
+  div.cards div:nth-child(4) a {
+    background-color: #576574;
+  }//end card 4
+  div.cards div a:hover{
+    background: none;
+    text-shadow: 0 0 6px black;
+  }
+  div.cards a img{
+    padding: 4rem 0 0 0;
+  }
+  div.cards a h3{
+    color: white;
+    
+  }
 }//end main
 
 footer{
