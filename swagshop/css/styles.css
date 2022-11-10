@@ -403,7 +403,10 @@ nav li.active a {
 }
 
 footer {
-  bottom: 0;
+  background-color: #D9C091;
+  color: #731702;
+  text-align: center;
+  padding: 2%;
 }
 
 /* end of media query */
