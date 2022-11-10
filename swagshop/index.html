@@ -33,7 +33,44 @@
     </nav>
     <!--main-->
     <main>
-        
+       <h1>Order</h1> 
+       <form method="get" action="thanks.html">
+        <fieldset>
+            <legend>Customer Information</legend>
+            <label class="top">Full Name* <input type="text" name="fname" required></label>
+            <label class="top">Phone* <input type="tel" name="phone" placeholder="8013334444" required></label>
+            <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
+        </fieldset>
+        <fieldset>
+            <legend>Swag Information</legend>
+            <label class="top">Date Needed <input type="date" name="date" ></label>
+            <label class="top">Business Name <input type="text" name="businessName" ></label>
+            <label class="top">Buisiness Website <input type="url" name="businessWebsite" placeholder="http://" ></label>
+            <label class="top">Color
+                <select name="color">
+                    <option value="">Please Select</option>
+                    <option value="red">Gryffindor Red</option>
+                    <option value="blue">Ravenclaw Blue</option>
+                    <option value="yellow">Hufflepuff Yellow</option>
+                    <option value="green">Slytherin Green</option>
+                    <option value="black">Black</option>
+                    <option value="white">White</option>
+                </select>
+            </label>
+            <label class="top">Quantity Needed <input type="number" name="number"></label>
+            <div>Material</div>
+            <label class="sbs"><input type="radio" name="material" value="cotton">Cotton</label>
+            <label class="sbs"><input type="radio" name="material" value="fleece">Fleece</label>
+        </fieldset>
+        <fieldset>
+            <legend>Payment Information</legend>
+            <label class="top">Name on Card* <input type="text" name="cname" required></label>
+            <label class="top">Card Number* <input type="number" name="cnumber" required></label>
+            <label class="top">Expiration Date* <input type="date" name="cdate" required></label>
+        </fieldset>
+
+        <input class="submitBtn" type="submit" value="Place My Order">
+       </form>
     </main>
     <!--footer-->
     <footer>&copy; Kylee Harward 2022 &bull; Login</footer>

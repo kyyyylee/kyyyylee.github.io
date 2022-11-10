@@ -326,7 +326,7 @@ body {
   font-size: 16px;
 }
 
-header, nav, footer {
+header, nav, main, footer {
   max-width: 64rem;
   margin: auto;
 }
@@ -400,6 +400,62 @@ nav ul li a:hover {
 }
 nav li.active a {
   color: #731702;
+}
+
+main h1 {
+  padding-left: 2%;
+}
+
+form {
+  margin: 2%;
+}
+form fieldset {
+  margin-bottom: 1.5rem;
+  border: 1px solid #26211F;
+  border-radius: 1rem;
+}
+form legend {
+  color: #26211F;
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+}
+form label.top, form div {
+  display: block;
+  padding-top: 1rem;
+  color: #26211F;
+  font-size: 0.8rem;
+}
+form label.top input, form label.top select {
+  display: block;
+  font-size: 1.2rem;
+  border: solid 1px #26211F;
+  border-radius: 6px;
+  padding: 0.4rem 0.8rem;
+  width: 100%;
+  max-width: 25rem;
+  color: #333;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+form label.sbs {
+  display: block;
+  padding: 0.8rem 0;
+  color: #26211F;
+}
+form label.sbs input {
+  margin-right: 0.5rem;
+}
+form input.submitBtn {
+  border: none;
+  background-color: #731702;
+  color: white;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  margin: 2rem 0 2rem 2%;
+  width: 100%;
+  max-width: 20rem;
+}
+form input.submitBtn:hover {
+  background-color: #280801;
 }
 
 footer {

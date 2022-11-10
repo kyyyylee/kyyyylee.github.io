@@ -20,7 +20,7 @@ body{
 }
 
 //max width
-header,nav, footer{
+header,nav, main, footer{
   max-width: 64rem;
   margin: auto;
 }
@@ -95,6 +95,61 @@ nav{
     color: $redColor;
   }//end active
 }//end nav
+main h1{
+  padding-left: 2%;
+}
+//form
+form{
+  margin: 2%;
+  fieldset{
+    margin-bottom: 1.5rem;
+    border: 1px solid $darkColor;
+    border-radius: 1rem;
+  }
+  legend{
+    color: $darkColor;
+    margin: 0 1rem;
+    padding: 0 0.5rem;
+  }// end legend
+  label.top, div{
+    display: block;
+    padding-top: 1rem;
+    color: $darkColor;
+    font-size: .8rem;
+  }//end .top and div
+  label.top input, label.top select{
+    display: block;
+    font-size: 1.2rem;
+    border: solid 1px $darkColor;
+    border-radius: 6px;
+    padding: .4rem .8rem;
+    width:100%;
+    max-width: 25rem;
+    color: #333;
+    background-color: rgba(0,0,0,0.1);
+  }//end input and select
+  label.sbs{
+    display: block;
+    padding: .8rem 0;
+    color: $darkColor;
+  }// end sbs
+  label.sbs input{
+    margin-right: 0.5rem;
+  }//end sbs input
+  input.submitBtn{
+    border: none;
+    background-color: $redColor;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 2rem 0 2rem 2%;
+    width: 100%;
+    max-width: 20rem;
+  }//end button
+  input.submitBtn:hover{
+    background-color: darken($redColor, 15%);
+  }
+}//end form
 
 footer{
   background-color: $tanColor;
