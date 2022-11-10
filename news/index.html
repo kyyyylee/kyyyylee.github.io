@@ -8,24 +8,61 @@
     <!--style sheet-->
     <link href="css/styles.min.css" rel="stylesheet">
     <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!--header-->
     <header>
-        <img src="images/newsLogo.png">
+        <img src="images/newsLogo.png" alt="logo">
     </header>
     <!--nav-->
     <nav>
-        <ul>
-            <li><a href="index.html">Breaking News</a></li>
-            <li class="active"><a href="#">Bikini Botton News</a></li>
+        <button id="hamburgerBtn">
+            <span class="line top"></span>
+            <span class="line middle"></span>
+            <span class="line bottom"></span>
+        </button>
+        <ul id="primaryNav">
+            <li><a href="#">Breaking News</a></li>
+            <li class="active"><a  href="index.html">Bikini Bottom News</a></li>
             <li><a href="#">Submit a Tip</a></li>
             <li><a href="#">Archive</a></li>
         </ul>
     </nav>
     <!--main-->
     <main>
-
+        <div class="storyGrid">
+            <div class="lead">
+                <img src="images/spongebobHeader.jpg" alt="lead">
+                <span>New Hamburger Car Hits the Streets</span>
+            </div>
+            <div class="teaser">
+                <img src="images/spongebob_1.jpeg" alt="sb1">
+                <span>Krusty Krab Releases Colored Burgers</span>
+            </div>
+            <div class="teaser">
+                <img src="images/spongebob_3.webp" alt="sb2">
+                <span>Strange Statues Found in Field</span>
+            </div>
+            <div class="teaser">
+                <img src="images/spongebob_4.webp" alt="sb3">
+                <span>Halloween Costume Ideas</span>
+            </div>
+            <div class="teaser">
+                <img src="images/spongebob_5.jpeg" alt="sb4">
+                <span>How to Expand Your Imagination</span>
+            </div>
+            <div class="teaser">
+                <img src="images/spongebob_6.webp" alt="sb5">
+                <span>Bikini Bottom on Fire</span>
+            </div>
+            <div class="teaser">
+                <img src="images/spongebob_7.webp" alt="sb6">
+                <span>Squidward Breaks into Krabby Vault</span>
+            </div>
+        </div><!--END STORY GRID-->
     </main>
     <!--footer-->
     <footer>
@@ -54,6 +91,9 @@
             <h3>PERSONALITIES</h3>
             <p>Perch Perkins</p>
             <p>Johhny Elaine</p>
+        </div>
+        <div class="barFoot">
+            <p>&copy; Kylee Harward 2022 &bull; UVU </p>
         </div>
     </footer>
 

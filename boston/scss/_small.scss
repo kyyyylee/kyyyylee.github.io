@@ -1,0 +1,115 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/*  apply a natural box layout model to all elements  */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+}
+
+//max width
+header, #headerWrapper, nav, main, footer{
+  max-width: 64rem;
+  margin: auto;
+}
+
+//header
+div#headerWrapper{
+  background-image: url(../images/boston.webp);
+  height: 175px;
+}
+header{
+  padding: 0.8rem 2%;
+  background-color: rgba(0,0,0,0.4);
+  height: 175px;
+  color: white;
+}
+//main
+main{
+  .swiper-wrapper{
+    margin-bottom: 40px;
+  }//end swiper-wrapper
+  .swiper{
+    width: 100%;
+    height: auto;
+    img{
+      width: 100%;
+      display: block;
+    }//end img
+    p{
+      margin: 0;
+      padding: .4rem 2vw;
+      position: absolute;
+      transform: translateY(-100%);
+      background-color: rgba(0,0,0,0.7);
+      text-align: center;
+      color: white;
+      width: 100%;
+    }//end p
+  }//end swiper
+  div.cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2%;
+  }
+  div.cards div{
+    flex-basis: 100%;
+    text-align: center;
+  }
+  div.cards div:nth-child(1) {
+    background-image: url(../images/card1.webp);
+  }//end card 1
+  div.cards div:nth-child(2) {
+    background-image: url(../images/card2.jpg);
+  }//end card 2
+  div.cards div:nth-child(3) {
+    background-image: url(../images/card3.jpg);
+  }//end card 3
+  div.cards div:nth-child(4) {
+    background-image: url(../images/card4.jpg);
+  }//end card 4
+  div.cards div a{
+    display: block;
+    width: 100%;
+    height: 560px;
+    text-decoration: none;
+    padding: 0 2%;
+  }
+  div.cards div:nth-child(1) a {
+    background-color: #575B87;
+  }//end card 1
+  div.cards div:nth-child(2) a {
+    background-color: #8E7B61;
+  }//end card 2
+  div.cards div:nth-child(3) a {
+    background-color: #42261C;
+  }//end card 3
+  div.cards div:nth-child(4) a {
+    background-color: #576574;
+  }//end card 4
+  div.cards div a:hover{
+    background: none;
+    text-shadow: 0 0 6px black;
+  }
+  div.cards a img{
+    padding: 4rem 0 0 0;
+  }
+  div.cards a h3{
+    color: white;
+    
+  }
+}//end main
+
+footer{
+  text-align: center;
+  padding: 0.8rem 2vw;
+  background-color: #575B87;
+}

@@ -1,0 +1,18 @@
+//main
+main{
+    div.storyGrid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        .lead{
+            grid-column: 1 / span 3;
+            grid-row: 1 / span 2;
+        }//end lead
+    }//end storyGrid
+}//end main
+
+//footer
+footer{ 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    .barFoot{
+        grid-column: 1 / span 4;
+    }
+}//end footer

@@ -1,0 +1,39 @@
+//nav display 
+nav{
+    button{
+        display: none;
+    }// end button
+    ul, ul.open{
+        display: flex;
+        justify-content: flex-start;
+        list-style-type: none;
+    }// end of ul
+    a{
+        display: block;
+        padding:0.8rem 2vw;
+    }
+}// end nav
+
+main{
+    //storyGrid
+    div.storyGrid{
+        grid-template-columns: 1fr 1fr 1fr;
+        //span
+        span{
+            font-size: 1rem;
+        }//end span
+        .lead{
+            grid-column: 1 / span 3;
+        }//end lead
+    }//end storyGrid
+}//end main
+
+//footer
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    .barFoot{
+        grid-column: 1 / span 2;
+    }
+}//end footer
