@@ -1,0 +1,23 @@
+//hide hamburger
+#hamburgerBtn{
+    display: none;
+}
+//nav
+nav{
+    position: static;
+    transform: translateX(0);
+    width: auto;
+    div{
+        display: none;
+    }//end div
+    ul{
+        display: flex;
+        margin-left: 2%;
+        border-left: 1px solid rgba(0,0,0,0.25);
+    }//end ul
+    ul li a{
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.25);
+        padding: .6rem 1.5rem;
+    }//end a
+}//end nav

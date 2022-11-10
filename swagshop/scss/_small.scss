@@ -1,0 +1,101 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/*  apply a natural box layout model to all elements  */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+//body
+body{
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+}
+
+//max width
+header,nav, footer{
+  max-width: 64rem;
+  margin: auto;
+}
+
+//nav slider
+#pageWrapper{
+  position: relative;
+  overflow-x: hidden;
+}
+.moveOver> #content{
+  transform: translateX(-180px);
+}
+#content{
+  transition: transform 500ms ease;
+}
+
+//header
+header{
+  display: grid;
+  grid-template-columns: 100px auto auto;
+  padding: 0.8rem 2%;
+  background-color: $tanColor;
+  h1{
+    align-self: flex-end;
+    color: $redColor;
+    padding-left: 0.8rem;
+  }//end h1
+  button{
+    width: 48px;
+    height: 48px;
+    margin: 0;
+    align-self: start;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    text-align: right;
+    color: $darkColor;
+  }//end button
+}//end header
+
+nav{
+  background-color: #eee;
+  width: 180px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateX(100%);
+  div{
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+    background-color: $redColor;
+    color: white;
+  }//end div
+  ul{
+    list-style-type: none;
+  }// end ul
+  ul li a{
+    display: block;
+    padding: 0.8rem .5rem;
+    text-align: right;
+    border-bottom: 1px solid rgba(0,0,0,0.25); 
+    text-decoration: none;
+    list-style-type: none;
+    color: $darkColor;
+  }//end a
+  ul li a:hover{
+    background-color: lighten($tanColor, 20%);
+  }//end hover
+  li.active a{
+    color: $redColor;
+  }//end active
+}//end nav
+
+footer{
+  bottom: 0;
+}
