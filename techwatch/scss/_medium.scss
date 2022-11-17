@@ -1,0 +1,9 @@
+//-------------page wrapper----------//
+div#pageWrapper{
+    grid-template-areas: 
+      "hamburger"
+      "header"
+      "main"
+      "footer"
+      "navigation";
+  }

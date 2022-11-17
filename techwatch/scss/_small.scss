@@ -12,3 +12,96 @@ html {
   margin: 0;
   padding: 0;
 }
+
+//-------------page wrapper----------//
+div#pageWrapper{
+  max-width: 75rem;
+  margin: auto;
+  display: grid;
+  grid-template-areas: 
+    "hamburger"
+    "header"
+    "main"
+    "footer"
+    "navigation";
+}
+
+//-------------------body------------------//
+body{
+  font-family: 'Fragment Mono', monospace;
+font-size: 16px;
+}
+
+//----------------header------------------//
+header{
+  grid-area: header;
+  background-color: #eaeaea;
+  padding: 0.8rem 2%;
+}
+
+//----------------nav--------------------//
+nav{
+  grid-area: navigation;
+  height: 100vh;
+  background-color: #eaeaea;
+  ul{
+    list-style-type: none;
+  }//end ul
+  ul li a{
+    display: block;
+    padding: 0.8rem 0;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+    color: black;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+  }//end a
+  a.navJump{
+    display: block;
+    width: 60px;
+    color: rgba($color: #000000, $alpha: 0.7);
+    font-size: 1.5rem;
+    padding: .4rem;
+    text-decoration: none;
+    padding-left: 2%;
+  }//end x
+  ul li.active a{
+    background-color: #00A89D;
+  }//end active
+}//end nav
+
+//-----------------main-----------------//
+main{
+  grid-area: main;
+  h1, p{
+    padding-left: 2%;
+  }//end h1 p
+  figure{
+    text-align: center;
+    color: rgba(0,0,0,0.7);
+    padding: 0.8rem 0;
+  }//end figure
+}//end main
+
+
+//-------------hamburger menu----------//
+div#hamburger{
+  grid-area: hamburger;
+  background-color: #00A89D;
+  a{
+  display: block;
+  width: 60px;
+  color: rgba($color: #000000, $alpha: 0.7);
+  font-size: 1.7rem;
+  padding: .4rem;
+  text-decoration: none;
+  padding-left: 2%;
+  }//end a
+}//end div
+
+ //---------------footer---------------//
+footer{
+  grid-area: footer;
+  background-color: #00A89D;
+  padding: 0.8rem 2%;
+}//end footer
