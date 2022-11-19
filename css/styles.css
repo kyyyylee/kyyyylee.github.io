@@ -24,6 +24,7 @@ footer {
      nav ul, ul.open{
         display: flex;
         justify-content: flex-end;
+        flex-wrap: wrap;
     }
     nav ul a{
         display: block;
