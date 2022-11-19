@@ -16,3 +16,10 @@ div#pageWrapper{
       display: none;
     }//end x
   }
+
+main{
+  div.offset{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

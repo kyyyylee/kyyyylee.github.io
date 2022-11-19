@@ -79,11 +79,12 @@ main{
   grid-area: main;
   h1, p{
     padding-left: 2%;
+    padding-top: 2rem;
   }//end h1 p
   figure{
     text-align: center;
     color: rgba(0,0,0,0.7);
-    padding: 0.8rem 0;
+    padding: 1rem ;
   }//end figure
 }//end main
 
