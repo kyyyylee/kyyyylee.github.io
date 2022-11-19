@@ -1,0 +1,18 @@
+//-------------page wrapper----------//
+div#pageWrapper{
+    grid-template-areas: 
+      "header"
+      "navigation"
+      "main"
+      "footer";
+      grid-template-columns: auto;
+  }
+nav{
+    ul{
+        display: flex;
+    }//end ul
+    ul li a{
+        padding: 0.8rem 1.5rem;
+        border: none;
+    }
+}//end nav

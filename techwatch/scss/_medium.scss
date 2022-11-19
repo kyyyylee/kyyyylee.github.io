@@ -1,9 +1,18 @@
 //-------------page wrapper----------//
 div#pageWrapper{
     grid-template-areas: 
-      "hamburger"
-      "header"
-      "main"
-      "footer"
-      "navigation";
+      "header header"
+      "navigation main"
+      "footer footer";
+      grid-template-columns: 150px auto;
+  }
+
+  #hamburger{
+    display: none;
+  }
+  nav{
+    height: auto;
+    a.navJump{
+      display: none;
+    }//end x
   }
