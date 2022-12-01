@@ -323,6 +323,11 @@ html {
   font-size: 16px;
 }
 
+main {
+  max-width: 64rem;
+  margin: auto;
+}
+
 header {
   background-color: #8E51F0;
 }
