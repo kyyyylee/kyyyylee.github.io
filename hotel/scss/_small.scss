@@ -11,4 +11,98 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
 }
+
+header {
+  background-color: $primarycolor;
+  h1{
+    margin: 0;
+    padding: 0.8rem 2%;
+    color: white;
+  }//end h1
+}//end header
+
+//----------NAV----------//
+nav{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: $primarycolor;
+  ul{
+    display: flex;
+  }//end ul
+  ul li{
+    flex-basis: 33.33%;
+    list-style-type: none;
+  }//end li
+  ul li a{
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+    color: white;
+    text-decoration: none;
+  }//end a
+  .active{
+    background-color: darken($primarycolor, 5%);
+  }//end active
+  a:hover{
+    background-color: lighten($primarycolor, 5%);
+  }//end hover
+  ul li a i{
+    font-size: xx-large;
+  }//ens i
+}//end nav
+
+//----------MAIN----------//
+main {
+  padding: 0 2%;
+  min-height: 10rem;
+  h1{
+    margin-left: .4rem;
+  }
+  div#myCards{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 10rem;
+    figure{
+      margin: 0;
+      width: 100%;
+      position: relative;
+      img{
+        width: 100%;
+      }//end img
+      figcaption{
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 0.28rem;
+        background-color: rgba(255,255,255,0.6);
+        width: 100%;
+        padding: 0.5rem 2%;
+      }//end figcaption
+    }//end figure
+    section{
+      background-color: $secondarycolor;
+      margin: .4rem;
+    }
+    div.infoDiv{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: .5rem;
+    }//end infoDiv
+    div.infoDiv i{
+      float: left;
+      font-size: 1.5rem;
+    }//end infoDiv i
+    div.infoDiv p{
+      padding-left: 1.8rem;
+    }
+}//end #myCards
+}//end main
+
