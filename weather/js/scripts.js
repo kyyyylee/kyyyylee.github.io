@@ -3,7 +3,7 @@ const d = new Date();
 const todayDayNumber = d.getDay();
 
 //array for weekdays from day number
-const myweekday = new Array(7);
+const weekday = new Array(7);
 weekday[0] = "Sunday";
 weekday[1] = "Monday";
 weekday[2] = "Tuesday";
@@ -29,7 +29,7 @@ fetch(apiURL)
         let forecastDayNumber = todayDayNumber;
         for (i = 0;i < mylist.length; i++){
             let time = mylist[i].dt_txt;
-            if (time.includes('19:00:00')){
+            if (time.includes('18:00:00')){
 
                  //increase day number each loop
                  forecastDayNumber += 1;

@@ -11,9 +11,10 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  
 }
-
+main{
+  background-color: #F2D8CE;
+}
 //----------HEADER----------//
 header{
   text-align: center;
@@ -24,12 +25,26 @@ header{
 
 //----------MAIN----------//
 div#weatherforecast{
-  display: block;
-}
+  display: grid;
+  grid-template-columns: 1fr;
+  div{
+    text-align: center;
+    background-color: $secondaryColor;
+    margin: 1rem 1.5rem;
+    border-radius: 10px;
+  span{
+    font-size: 1.5rem;
+    display: block;
+    padding: 0.8rem 0;
+    color: $thirdColor;
+  }
+  }//end div
+}//end id parent
 
 //----------FOOTER----------//
 footer{
   text-align: center;
   padding: 0.8rem 0;
   background-color: $primaryColor;
+  color: white;
 }//end footer

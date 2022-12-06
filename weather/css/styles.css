@@ -321,22 +321,48 @@ html {
   padding: 0;
 }
 
+main {
+  background-color: #F2D8CE;
+}
+
 header {
   text-align: center;
   padding: 0.8rem 0;
-  background-color: orange;
+  background-color: #F2B178;
   color: white;
 }
 
 div#weatherforecast {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+div#weatherforecast div {
+  text-align: center;
+  background-color: #FAEDE1;
+  margin: 1rem 1.5rem;
+  border-radius: 10px;
+}
+div#weatherforecast div span {
+  font-size: 1.5rem;
   display: block;
+  padding: 0.8rem 0;
+  color: #4C453D;
 }
 
 footer {
   text-align: center;
   padding: 0.8rem 0;
-  background-color: orange;
+  background-color: #F2B178;
+  color: white;
 }
 
-/* end of media query */
-/* end of media query */
+@media only screen and (min-width: 560px) {
+  div#weatherforecast {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+} /* end of media query */
+@media only screen and (min-width: 1028px) {
+  div#weatherforecast {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+} /* end of media query */
