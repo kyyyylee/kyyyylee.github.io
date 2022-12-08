@@ -479,7 +479,7 @@ main div.brands img {
 }
 
 @media only screen and (min-width: 560px) {
-  header, nav, .hero, .about, .brands, .textWrapper {
+  header, nav, .hero, .about, .brands, .textWrapper, footer {
     max-width: 75rem;
     margin: auto;
   }
