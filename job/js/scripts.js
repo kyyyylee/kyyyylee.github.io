@@ -1,4 +1,4 @@
-const hb = document.querySelector('#navButton');
+const hb = document.querySelector('#hamburgerBtn');
 const pn = document.querySelector('#navList');
 
 hb.addEventListener('click', () => {

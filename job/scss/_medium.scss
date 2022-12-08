@@ -1,0 +1,71 @@
+//----------max width----------//
+header, nav, .hero, .about, .brands, .textWrapper{
+    max-width: 75rem;
+    margin: auto;
+}
+//----------main----------//
+main{
+    background-color: transparent;
+}
+//----------nav----------//
+nav {
+    button {
+        display: none;
+    }//end button
+    ul, ul.open {
+        display: flex;
+        margin-left: 2%;
+    }//end .open
+    ul li {
+        width: auto; 
+        margin: 0 .5rem;
+    }//end li
+    ul li a{padding: .5rem 1rem;
+    }//end a
+}  //end nav 
+  
+//----------- main --------------
+main {
+    div.textWrapper {
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    padding-top: .8rem;
+    div.formula {
+    text-align: right;
+    }//end formula
+    }//end wrapper
+    div.about {
+        div.cards {
+            display: flex;
+        }//end cards
+        div.card {
+          margin: .5rem;
+        }//end card
+    }//end.about
+    div.news {
+        background-color: #eaeaea;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        .box, .graph, .techsupport {
+            margin: .5rem;
+        }//end margin
+        .graph {
+            grid-column: 3;
+            grid-row: 1 / span 2;   
+        }//end .graph
+        .techsupport {
+            grid-column: 1 / span 2;
+        }//end tech
+    }//end news div
+    div.brands {
+        display: flex;
+        align-items: center;
+        figure {
+            width: 100%;
+            img {
+                padding: .8rem;
+                width: 100%;
+            }//end img
+        }//end figure     
+    }//end brands
+}//end main
