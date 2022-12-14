@@ -2,10 +2,10 @@
 html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-  }
+}
   
   /*  apply a natural box layout model to all elements  */
-  * {
+* {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -13,11 +13,19 @@ html {
     padding: 0;
     font-family: 'League Spartan', sans-serif;
     font-size: 16px;
-  }
+}
 
+
+header, nav, main, footer{
+  max-width: 75rem;
+  margin: auto;
+}
+
+#headerWrapper{
+  background-color: black;
+}//end wrapper
 
 header{
-    background-color: black;
     color: white;
     display: flex;
     padding: 0.8rem 2%;
@@ -26,8 +34,32 @@ header{
     }//end h1
 }//end header
 
+main{
+  .swiper{
+    width: 100%;
+    height: auto;
+    img{
+      width: 100%;
+      display: block;
+    }//end img
+    p{
+      margin: 0;
+      padding: .4rem 2vw;
+      position: absolute;
+      transform: translateY(-99%);
+      background-color: rgba(0,0,0,0.7);
+      text-align: center;
+      color: white;
+      width: 100%;
+    }//end p
+  }//end swiper
+}//end main
+
+#footerWrapper{
+  background-color: black;
+}//end wrapper
 footer{
-    background-color: black;
+    margin: -0.25rem;
     color: white;
     text-align: center;
     padding: 0.8rem 0;
