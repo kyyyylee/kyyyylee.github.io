@@ -380,6 +380,7 @@ main form legend {
 main form label {
   display: block;
   padding-top: 1rem;
+  padding: 0.8rem;
 }
 main form label input {
   display: block;
