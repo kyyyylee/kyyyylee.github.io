@@ -342,6 +342,9 @@ header h1 {
   padding-left: 1rem;
 }
 
+main h1 {
+  padding: 0 2%;
+}
 main .swiper {
   width: 100%;
   height: auto;
@@ -359,6 +362,65 @@ main .swiper p {
   text-align: center;
   color: white;
   width: 100%;
+}
+main form {
+  max-width: 45rem;
+  margin: 2%;
+}
+main form fieldset {
+  border: 2px solid black;
+  border-radius: 0.4rem;
+  padding-bottom: 2rem;
+}
+main form legend {
+  color: #A51F2F;
+  padding: 0 0.8rem;
+  margin: 0 1rem;
+}
+main form label {
+  display: block;
+  padding-top: 1rem;
+}
+main form label input {
+  display: block;
+  border: solid 2px black;
+  border-radius: 4px;
+  padding: 0.4rem 1rem;
+  width: 100%;
+}
+main form input.submitBtn {
+  border: none;
+  background-color: #A51F2F;
+  color: white;
+  border-radius: 0.8rem;
+  padding: 0.8rem;
+  margin: 2%;
+  margin-left: 0;
+  width: 100%;
+}
+main div.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-bottom: 1rem;
+}
+main div.cards div {
+  border: 2px solid black;
+  text-align: center;
+  background-color: #eaeaea;
+  padding: 2rem;
+  margin: 0.8rem 2rem;
+  border-radius: 4px;
+}
+main div.cards div h2 {
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+}
+main div.cards div i {
+  color: black;
+  font-size: 2rem;
+}
+main div.cards div i:hover {
+  color: #A51F2F;
 }
 
 #footerWrapper {
@@ -490,10 +552,16 @@ footer {
   nav li.active a {
     background-color: #901b29;
   }
+  main div.cards {
+    grid-template-columns: 1fr 1fr;
+  }
 } /* end of media query */
 @media only screen and (min-width: 1028px) {
   main .swiper {
     width: 75%;
     height: auto;
+  }
+  main div.cards {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 } /* end of media query */

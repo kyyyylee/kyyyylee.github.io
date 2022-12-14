@@ -43,4 +43,8 @@ nav{
         background-color: darken($primaryColor, 5%) ;
     }
 }//end nav
-
+main{
+    div.cards{
+        grid-template-columns: 1fr 1fr;
+    }
+}

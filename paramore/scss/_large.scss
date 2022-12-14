@@ -3,4 +3,7 @@ main{
         width: 75%;
         height: auto;
     }
+    div.cards{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
