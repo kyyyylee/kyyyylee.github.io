@@ -422,13 +422,24 @@ main div.cards div i {
 main div.cards div i:hover {
   color: #A51F2F;
 }
+main .gallery {
+  padding: 0 2% 0.8rem 2%;
+}
+main .gallery figure {
+  width: 100%;
+  margin: 0;
+}
+main .gallery figure img {
+  width: 100%;
+  height: auto;
+}
 
 #footerWrapper {
   background-color: black;
 }
 
 footer {
-  margin: -0.25rem;
+  margin-top: -0.25rem;
   color: white;
   text-align: center;
   padding: 0.8rem 0;
