@@ -11,7 +11,11 @@ html {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 16px;
   }
+
+
 header{
     background-color: black;
     color: white;
@@ -21,3 +25,10 @@ header{
         padding-left: 1rem;
     }//end h1
 }//end header
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 0.8rem 0;
+}//end footer

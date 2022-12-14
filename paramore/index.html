@@ -8,6 +8,7 @@
     <!--style sheet-->
     <link href="css/styles.min.css" rel="stylesheet">    
     <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <!--header-->
@@ -23,7 +24,19 @@
     </header>
     <!--nav-->
     <nav>
-
+       <button id="hamburgerBtn">&#9776;</button>
+       <ul id="primaryNav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="#">Tour</a></li>
+            <li class="parent"><a href="#">Merch</a>
+                <ul>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">Clothing</a></li>
+                    <li><a href="#">Accessories</a></li>
+                </ul>
+            </li><!--end parent-->
+            <li><a href="#">Socials</a></li>
+       </ul><!--end primary nav-->
     </nav>
     <!--main-->
     <main>
@@ -31,7 +44,10 @@
     </main>
     <!--footer-->  
     <footer>
-        
+        © Atlantic Records 2022 / Terms of use / Privacy Policy / Ad Choices / Cookies Policy Do Not Sell My Personal Information
     </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>
