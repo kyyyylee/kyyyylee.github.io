@@ -23,7 +23,8 @@ footer {
 @media only screen and (min-width: 825px) {
      nav ul, ul.open{
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
+         gap: 1em;
         flex-wrap: wrap;
     }
     nav ul a{
@@ -45,7 +46,7 @@ header {
     padding: 0.8rem;
 }
 nav ul{
-    margin: 0;
+    margin: 0 0 10em 0;
     padding: 0;
 }
 nav li{
@@ -54,6 +55,8 @@ nav li{
 nav a{
     display: block;
     color: black;
+    background-color: #BEC4AA;
+    border-radius: 10px;
     text-decoration: none;
     padding: 0.8rem 2%;
 }
