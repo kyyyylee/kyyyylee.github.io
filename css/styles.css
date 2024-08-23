@@ -20,19 +20,7 @@ footer {
   max-width: 75rem;
   margin: auto;
 }
-@media only screen and (min-width: 825px) {
-     nav ul, ul.open{
-        display: flex;
-        justify-content: center;
-         gap: 1em;
-        flex-wrap: wrap;
-    }
-    nav ul a{
-        display: block;
-        padding:1rem 1.5rem;
-    }
 
-} /* end of media query */
 header {
     padding: 0.8rem 1.5%;
     display: grid;
